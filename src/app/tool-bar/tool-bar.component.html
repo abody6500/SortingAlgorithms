@@ -1,0 +1,24 @@
+<div class="nav">
+  <div>
+  <button disabled>Sort !</button>
+    <button (click)="changeSize(arraySize)">Generate new array</button>
+  </div>
+  <div class="right-side">
+  <div class="ranges">
+    <div class="input-container">
+      <label for="speed">Sort speed: </label>
+    <input type="range" name="speed" id="speed">
+    </div>
+    <div class="input-container">
+      <label for="size">Array size: </label>
+    <input type="range" id="size" min="5" max="200" step="5" [(ngModel)]="arraySize" (ngModelChange)="changeSize(arraySize)">
+    </div>
+  </div>
+  <div class="group-buttons">
+    <div class="sort-type"><span> Bubble Sort</span></div>
+    <div class="sort-type"><span>Quick Sort</span></div>
+    <div class="sort-type"><span>Merge Sort</span></div>
+    <div class="sort-type"><span>Heap Sort</span></div>
+  </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+.nav {
+  background-color: black;
+  height: auto;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.group-buttons {
+  display: flex;
+float: right;
+  .sort-type {
+    margin-right: 20px;
+    color: white;
+    font-size: 15px;
+  }
+
+}
+span:hover {
+  cursor: pointer;
+  color: blue;
+}
+.ranges {
+  margin-right: 20px;
+}
+button {
+  margin: 0 2px;
+}
+
+.right-side {
+  display: flex;
+}
